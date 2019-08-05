@@ -1,0 +1,27 @@
+let config = require('./config/config')
+module.exports={
+    devServer:{
+        proxy:{
+            '/getbanner':{
+                target:config.active,
+                changeOrigin:true
+            },
+            '/ajx':{
+                target:config.active,
+                changeOrigin:true
+              },
+              '/form':{
+                target:config.active,
+                changeOrigin:true
+              },
+              '/post':{
+                target:config.active,
+                changeOrigin:true
+              },
+              '/uphead':{
+                target:config.active,
+                changeOrigin:true
+              }
+        }
+    }
+}
